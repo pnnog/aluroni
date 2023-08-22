@@ -1,0 +1,19 @@
+[
+  {
+    "nome":"",
+    "value":""
+  },
+ 
+  {
+    "nome": "Porção",
+    "value": "size"
+  },
+  {
+    "nome": "Qtd. pessoas",
+    "value": "serving"
+  },
+  {
+    "nome": "Preço",
+    "value": "price"
+  }
+]
