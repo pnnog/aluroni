@@ -1,12 +1,15 @@
-import {ReactComponent as Logo} from '../../assets/logo.svg'
+import {ReactComponent as Logo} from '../../assets/logo.svg';
+
+import * as S from './styles';
+
 function Footer() {
- return (
-   <footer>
-     <h2>Aluraflix</h2>
-     <p>Veja filmes a qualquer hora!</p>
-     <Logo />
-   </footer>
- )
+  return (
+    <S.Wrapper>
+      <S.Content>
+        <Logo />
+      </S.Content>
+    </S.Wrapper>
+  );
 }
 
-export default Footer
+export default Footer;

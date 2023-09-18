@@ -1,14 +1,20 @@
-import React from 'react';
+import {StrictMode} from 'react';
 import ReactDOM from 'react-dom/client';
-import 'normalize.css';
-import './index.css';
-import Cardapio from 'pages/Cardapio';
+
+import { GlobalStyles } from 'styles/global';
+import { ThemeProvider } from 'styled-components';
+import theme from 'styles/theme';
+import AppRouter from 'routes';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  // <React.StrictMode>
-   <Cardapio/>
-  // </React.StrictMode>
+  <StrictMode>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles/>
+      <AppRouter/>
+    </ThemeProvider>
+
+  </StrictMode>
 );
